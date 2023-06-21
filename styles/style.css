@@ -28,18 +28,139 @@ img {
 body {
     width: 100vw;
     min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--native-white);
     color: var(--pitch-black);
-
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 
     font-family: 'DM Sans', sans-serif;
 }
 
-main {}
+.title {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+main {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 24rem;
+    gap: 1.5rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0.4;
+}
+
+.method-button {
+    width: 18rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.method-button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.65rem;
+    font-weight: 700;
+    padding: 0.25rem 0 1rem 0;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.person-name.male {
+    color: #2F58CD;
+}
+
+.person-name.female {
+    color: #E80F88;
+}
+
+.person-wealth {
+    color: #2F8886;
+}
+
+.total-wealth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.total-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+
+.total-amount {
+    font-size: 1.25rem;
+    font-weight: 500;
+    /* color: green; */
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        margin: 0 12rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    main {
+        margin: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title {
+        margin: 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+

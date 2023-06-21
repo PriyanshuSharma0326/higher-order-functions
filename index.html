@@ -3,13 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
         <title>DOM Array Methods</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
+        <h1 class="title">DOM Array Methods</h1>
+
         <main>
+            <div class="button-container">
+                <button class="method-button" id="add-user">Add User 🙂</button>
+                <button class="method-button" id="double-money">Double Money 🫰</button>
+                <button class="method-button" id="only-millionaires">Show Only Millionaires 💸</button>
+                <button class="method-button" id="sort">Sort by Richest 💵</button>
+                <button class="method-button" id="total-wealth">Calculate Entire Wealth 🤑</button>
+            </div>
+
+            <div class="info-box">
+                <h3 class="header">
+                    <text class="header-left">Person</text>
+                    <text class="header-right">Wealth</text>
+                </h3>
+
+                <div class="people-container" id="people-container"></div>
+
+                <h3 class="total-wealth hidden" id="total-worth">
+                    <text class="total-title">Net Total</text>
+                    <text class="total-amount" id="total-amount"></text>
+                </h3>
+            </div>
         </main>
         <script src="./script.js"></script>
     </body>
